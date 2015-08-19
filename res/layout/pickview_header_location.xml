@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pickview_header_location_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pick_header_contact"
+    android:background="@drawable/view_tittle_bk" >
+
+    <TextView
+        android:id="@+id/textViewPageNum"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pageUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_page"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pageDivider"
+        android:text="@string/previous_page"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/pageDivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/pageDownBtn"
+        android:background="@drawable/line_y" />
+
+    <Button
+        android:id="@+id/pageDownBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_page"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next_page"
+        android:textSize="15sp" />
+
+</RelativeLayout>

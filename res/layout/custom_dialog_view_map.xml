@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="190dp"
+    android:orientation="vertical" 
+    android:background="@drawable/dialog_view_bk">
+
+    <RelativeLayout
+        android:id="@+id/amapPannel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_call_ok_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/amap_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/amap"
+            android:textColor="@color/grey_white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/amap_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected" 
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/baiduPannel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:background="@drawable/btn_call_ok_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/baidu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/baidu"
+            android:textColor="@color/grey_white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/baidu_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_list_divider" />
+
+    <Button
+        android:id="@+id/map_setting_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_call_ok_bg"
+        android:text="@string/cancel"
+        android:textSize="20sp"
+        android:textColor="@color/grey_white" />
+
+</LinearLayout>

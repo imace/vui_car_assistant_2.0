@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ilincar.voice"
+    android:versionCode="38"
+    coreApp="true"
+    android:versionName="2.1.0.38" >
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <!-- vui assistant application -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="cn.yunzhisheng.vui.assistant.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:taskAffinity="cn.yunzhisheng.vui.assistant.phone"
+        android:theme="@style/AppTheme" >
+
+        <!--
+             AMap debug yuanzhe:7672a0a26a0463de67cb3cc95d973e5d | wlp:141948bd7136fad98e7f9c6a2b3cac3a | tyz:daf2ed1a39b8f6ca510faec90e0761d2
+        		  yj:43988c22d050e01ad3ee55a9bff2a99c | zq:a5a7fa00e380ec4740ff4d634c8791fe | Leon:490446582fed44259456a1639445faec
+        		  signed 1faac83a488ebcc065356c8b9d7fb493 | sc:22d1c101de5a72139888d43b86cc0bc9 | liujun : 3a059b3dab3516d2cc7e38ef37584d68
+        		  | tyz_m :e45840d04e0e2c9fd76e0ec8b581362e | wlp_thinkpad : 4725dd080b1882997dc9aca68f8c846c | acer : aab8d4043869ef1b216872ff9fd9ea34
+        -->
+
+
+        <!--
+                  BaiduMap
+        		  yj:43988c22d050e01ad3ee55a9bff2a99c | zq:3yqBSLAGwGGGrLBUyG4GdrG9 | liujun: E6Y9lg49qejGRTlZosUFTf7P |Leon:litPaoKnMr26Xub0vzG4HfIY
+        		  signed xoVlyefYCcstSywG0y62Sg2R
+        -->
+        
+        <meta-data
+            android:name="com.amap.api.v2.apikey" android:value="6f486e695a810dff996d94fc907a2245" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY" android:value="9xVMLMsxRSNXNmOpllkaafsO" />
+        <!-- vui assistant activity -->
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:taskAffinity="cn.yunzhisheng.vui.assistant.phone.root" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.MusicCenterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.MemoManagementActivity"
+            android:screenOrientation="landscape"
+            android:excludeFromRecents="true" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.ReminderGoOffActivity"
+            android:screenOrientation="landscape"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.baidu.LocationOverlayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.baidu.RouteOverlayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.gaode.GaodeLocationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.gaode.GaodeRouteActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity
+            android:name="cn.yunzhisheng.vui.assistant.HelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <!-- Receiver -->
+        <receiver android:name="cn.yunzhisheng.vui.assistant.MessageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.START_TALK" />
+                <action android:name="cn.yunzhisheng.intent.action.CANCEL_TALK" />
+                <action android:name="cn.yunzhisheng.intent.action.STOP_TALK" />
+
+                <category android:name="cn.yunzhisheng.intent.category.RECOGNIZE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.yunzhisheng.vui.assistant.sms.SmsSendReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.MESSAGE_SENT" />
+
+                <data android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.SEND_MESSAGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.yunzhisheng.vui.assistant.sms.MessageStatusReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.MESSAGE_STATUS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!--
+        <receiver android:name="cn.yunzhisheng.vui.assistant.memo.ReminderBroadCastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="cn.yunzhisheng.intent.action.APP_UPGRADE" />
+                <action android:name="cn.yunzhisheng.intent.action.REMINDER_GO_OFF" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver android:name="cn.yunzhisheng.phone.PhoneStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="cn.yunzhisheng.intent.action.call.ring"/>
+                <action android:name="cn.yunzhisheng.intent.action.call.hangup"/>
+                <action android:name="cn.yunzhisheng.intent.action.call.call"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="cn.yunzhisheng.vui.assistant.oem.RomCustomMessageReceiver" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.yunzhisheng.intent.action.custom.order.contact" />
+            </intent-filter>
+        </receiver>
+        
+        
+
+        <provider
+            android:name="cn.yunzhisheng.vui.database.operation.ContactProvider"
+            android:authorities="cn.yunzhisheng.vui.provider.ContactProvider"
+            android:exported="true" >
+        </provider>
+        <provider
+            android:name="cn.yunzhisheng.vui.database.operation.MediaProvider"
+            android:authorities="cn.yunzhisheng.vui.provider.MediaProvider"
+            android:exported="true" >
+        </provider>
+
+        <!-- vui assistant service -->
+        <service android:name="cn.yunzhisheng.vui.assistant.talk.TalkService" >
+        </service>
+        <service android:name="cn.yunzhisheng.vui.assistant.WindowService" >
+        </service>
+        <service android:name="cn.yunzhisheng.vui.assistant.sms.SmsSenderService" >
+        </service>
+
+        <!--
+        <receiver
+            android:name="cn.yunzhisheng.vui.assistant.sms.SmsNewReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.GSM_SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED2" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service android:name="com.android.kwmusic.KWMusicService"  android:persistent="true" />
+        <service android:name="cn.yunzhisheng.vui.assistant.memo.ReminderService" />
+        <service android:name="cn.yunzhisheng.vui.assistant.media.MusicPlaybackService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,269 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/list_item_bg"
+        android:baselineAligned="false"
+        android:duplicateParentState="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" >
+
+        <TextView
+            android:id="@+id/textViewPoiDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:textColor="@color/grey_white"
+            android:drawableTop="@drawable/ic_poi_distance"
+            android:gravity="center_horizontal"
+            android:text="@string/baidu_text"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPoiName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_white"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/baidu_text"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textViewPoiBranchName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/grey_white"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/baidu_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textViewPoiCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/grey_white"
+                        android:text="@string/baidu_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPoiRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_white"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/baidu_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewPoiAvgPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/grey_white"
+                        android:gravity="center_vertical"
+                        android:text="@string/baidu_text"
+                        android:textSize="10sp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBarPoi"
+                        style="@style/PoiRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPoiItemExtend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewPoiAddr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_poi_list_item_position"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:textColor="@color/grey_white"
+            android:textSize="16sp" />
+
+        <!--
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" >
+
+            <TextView
+                android:id="@+id/textViewPoiStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/poi_list_extend_item_bg"
+                android:drawableLeft="@drawable/ic_poi_list_item_start"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="@string/start_from_here"
+                android:textColor="@color/music_item_bg_normal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewPoiEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/poi_list_extend_item_bg"
+                android:drawableLeft="@drawable/ic_poi_list_item_end"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="@string/go_to_here"
+                android:textColor="@color/music_item_bg_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+        -->
+
+        <TextView
+            android:id="@+id/textViewPoiPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/ic_poi_list_item_call"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="7dp"
+            android:singleLine="true"
+            android:textColor="@color/music_item_bg_normal"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" >
+
+            <TextView
+                android:id="@+id/textViewPoiPhoneSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_poi_list_item_save"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="@string/save"
+                android:textColor="@color/grey_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewPoiPhoneForward"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_poi_list_item_forward"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="@string/forwarding"
+                android:textColor="@color/grey_white"
+                android:textSize="16sp" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewPoiMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/poi_list_extend_item_bg"
+                android:drawableLeft="@drawable/ic_poi_list_item_more"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="@string/more"
+                android:textColor="@color/grey_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

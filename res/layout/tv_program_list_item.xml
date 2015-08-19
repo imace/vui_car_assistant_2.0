@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/textViewTVTime"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="25dip"
+        android:text="@string/empty_time"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewTVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewTVChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/channel"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

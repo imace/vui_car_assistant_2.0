@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/dialog_view_bk"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/slowPannel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/btn_call_ok_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/slow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/tts_speed_slow"
+            android:textColor="@color/grey_white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/slow_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/defaultPannel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/btn_call_ok_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/default_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/tts_speed_default"
+            android:textColor="@color/grey_white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/default_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/fastPannel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/btn_call_ok_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/fast_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/tts_speed_fast"
+            android:textColor="@color/grey_white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/fast_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_list_divider" />
+
+    <Button
+        android:id="@+id/map_setting_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_call_ok_bg"
+        android:text="@string/cancel"
+        android:textColor="@color/grey_white"
+        android:textSize="20sp" />
+
+</LinearLayout>

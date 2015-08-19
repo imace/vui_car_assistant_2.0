@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rlAppListItem"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="0dp" >
+
+	<TextView
+		android:id="@+id/textViewNearbyContent"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_marginLeft="1dp"
+		android:gravity="center_vertical"
+		android:paddingLeft="10dp"
+		android:ellipsize="marquee"
+		android:singleLine="true"
+		android:text=""
+		android:textColor="#000000"
+		android:textSize="15dp"
+		android:clickable="false" >
+	</TextView>
+	<include layout="@layout/divider" />
+</RelativeLayout>

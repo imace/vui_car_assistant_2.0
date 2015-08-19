@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutSMSContectItem"
+    android:layout_width="fill_parent"
+    android:layout_height="53dp"
+    android:gravity="left" >
+
+    <TextView
+        android:id="@+id/contectViewHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/head"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/grey_white"
+        android:textSize="15sp" />
+    
+</LinearLayout>

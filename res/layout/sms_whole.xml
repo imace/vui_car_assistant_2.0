@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutSMSOKItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/sessioncontainer_bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSMSOKItem2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/imageViewAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_contact_avatar_new" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSMSOKItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/contectViewHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/about_author"
+        android:textColor="@color/grey_white"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSMSOKItem4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnSms"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_call_ok_bg"
+            android:text="@string/broadcast2"
+            android:textColor="@color/grey_white"
+            android:textSize="26sp" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnCancelSms"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_call_cancle_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/grey_white"
+            android:textSize="26sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

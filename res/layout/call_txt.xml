@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutCALLTxtItem"
+    android:layout_width="fill_parent"
+    android:layout_height="197dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/callViewHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/grey_white"
+        android:textSize="@dimen/biggest_text_size" />
+
+    <View
+        android:layout_above="@+id/receiveCallPannel"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/line_list_divider" />
+
+    <LinearLayout
+        android:id="@+id/receiveCallPannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/answerBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_call_ok_bg"
+            android:text="@string/answer"
+            android:textSize="@dimen/smaller_text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line_y" />
+
+        <Button
+            android:id="@+id/hangupBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_call_ok_bg"
+            android:text="@string/hang_up"
+            android:textSize="@dimen/smaller_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

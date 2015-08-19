@@ -1,0 +1,29 @@
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > -->
+    <cn.yunzhisheng.vui.assistant.view.FunctionView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools"
+         xmlns:my="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_rl"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    	android:layout_height="wrap_content"
+    	android:paddingTop = "28dip"
+    	my:textSize="20sp"
+    	my:textWordMargin="20dp"
+    	my:textLineMargin="20dp"
+    	my:textColor="#ffffff"
+    	
+    	my:textPaddingLeft="10dp"
+    	my:textPaddingRight="10dp"
+    	my:textPaddingTop="10dp"
+    	my:textPaddingBottom="10dp"
+    	/>
+    <!-- my:textBackground="@color/testc"  my:textBackground="@drawable/view_text_bk"也可以 -->
+<!-- </FrameLayout> -->
+

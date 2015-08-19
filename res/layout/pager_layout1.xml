@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal">
+    
+    <LinearLayout android:id="@+id/bluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/btn_fuction_item_bg"
+        android:layout_weight="1"
+        android:gravity="center" >
+        
+        <ImageView 
+            android:id = "@+id/bluetooth_img"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:src="@drawable/bluetooth"/>
+        
+        <TextView 
+            android:id= "@+id/bluetooth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_conn"
+            android:layout_marginTop="@dimen/homepage_itemtextview_padding"
+            android:textColor="@color/grey_white"
+	        android:textSize="@dimen/smaller_text_size"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/line1"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/line_y"
+	    android:layout_toRightOf="@+id/bluetooth"/>
+    
+    <LinearLayout android:id="@+id/music"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/btn_fuction_item_bg"
+        android:layout_weight="1"
+        android:gravity="center">
+        
+        <ImageView 
+            android:id = "@+id/music_img"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:src="@drawable/music_play"/>
+        
+        <TextView 
+            android:id= "@+id/music_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_play"
+            android:paddingTop = "@dimen/homepage_itemtextview_padding"
+            android:textColor="@color/grey_white"
+	        android:textSize="@dimen/smaller_text_size"/>
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/line2" 
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/line_y"/>
+    
+    <LinearLayout android:id="@+id/radio"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/btn_fuction_item_bg"
+        android:layout_weight="1"
+        android:gravity="center"
+       >
+        
+        <ImageView 
+            android:id = "@+id/radio_img"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:src="@drawable/broadcast"/>
+        
+        <TextView 
+            android:id= "@+id/radio_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio"
+            android:paddingTop = "@dimen/homepage_itemtextview_padding"
+            android:textColor="@color/grey_white"
+	        android:textSize="@dimen/smaller_text_size"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/line3"
+	   android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/line_y"/>
+    
+     <LinearLayout android:id="@+id/poi"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/btn_fuction_item_bg"
+        android:layout_weight="1"
+        android:gravity="center"
+       >
+        
+        <ImageView android:id = "@+id/poi_img"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:src="@drawable/poi"/>
+        
+        <TextView android:id= "@+id/poi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/map_navigation"
+            android:paddingTop = "@dimen/homepage_itemtextview_padding"
+            android:textColor="@color/grey_white"
+	        android:textSize="@dimen/smaller_text_size"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/line4"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/line_y"/>
+    
+     <LinearLayout android:id="@+id/setting"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/btn_fuction_item_bg"
+        android:layout_weight="1"
+        android:gravity="center">
+        
+        <ImageView android:id = "@+id/setting_img"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:src="@drawable/setting"/>
+        
+        <TextView android:id= "@+id/setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_control"
+            android:paddingTop = "@dimen/homepage_itemtextview_padding"
+            android:textColor="@color/grey_white"
+	        android:textSize="@dimen/smaller_text_size"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/line5"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+        android:visibility="invisible"
+	    android:background="@drawable/line_y"/>
+</LinearLayout>

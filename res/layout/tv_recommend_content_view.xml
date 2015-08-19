@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tv_recom_header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="vertical" 
+        android:paddingLeft="10dip"
+         android:gravity="center_vertical"
+        android:background="@color/title_bg"
+       >
+        
+       <TextView
+        android:id="@+id/tv_recommend_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/tv_recommend_title"
+        android:textColor="@color/dark_blue"
+        android:textSize="17sp" />
+    </LinearLayout>
+    
+     <TextView
+        android:id="@+id/tv_recommend_no_datas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+        android:text="@string/tv_recommend_no_recomm"
+        android:textColor="@color/dark_blue"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <cn.yunzhisheng.vui.assistant.view.ELinearLayout
+        android:id="@+id/tv_recom_programm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp" >
+    </cn.yunzhisheng.vui.assistant.view.ELinearLayout>
+
+</LinearLayout>

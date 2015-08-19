@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:gravity="center_vertical"
+     android:paddingLeft="5dip">
+    
+    <TextView
+        android:id="@+id/recommend_item_detail_channel"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:text="@string/channel"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/recommend_item_detail_time"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lines="2" />
+    
+    <TextView
+        android:id="@+id/recommend_item_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lines="2"/>
+
+</LinearLayout>

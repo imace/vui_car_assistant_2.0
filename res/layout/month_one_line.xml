@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month_a_line"
+    android:layout_width="fill_parent"
+    android:layout_height="46.0dip" >
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate1"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate2"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate3"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate4"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate5"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate6"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+    <cn.yunzhisheng.vui.assistant.phone.component.Cell
+        android:id="@+id/monthLineDate7"
+        android:layout_width="0.0dip"
+        android:layout_height="46.0dip"
+        android:layout_weight="1.0" />
+
+</LinearLayout>
